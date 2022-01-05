@@ -14,15 +14,15 @@
 
 Wallfab ships with an extensive default set of [palettes](./palettes), including:
 
-* [Dracula]()
-* [Tokyonight -- and it's flavors]()
-* [Nord]()
-* [Gruvbox]()
-* [Gotham]()
-* [Spaceduck]()
-* [Perfect Cell -- the best DBZ villian;)]()
+* [Dracula](https://draculatheme.com/)
+* [Tokyonight -- and it's flavors](https://github.com/folke/tokyonight.nvim)
+* [Nord](https://www.nordtheme.com/)
+* [Gruvbox](https://github.com/morhetz/gruvbox)
+* [Gotham](https://github.com/whatyouhide/vim-gotham)
+* [Spaceduck](https://github.com/pineapplegiant/spaceduck)
+* [Perfect Cell -- the best DBZ villian;)](https://wallpaperaccess.com/full/6357054.jpg)
 
-... yet is able to handle many more and extending is easy as :cake:; simply
+... yet is able to handle many more, and adding more themes is easy as :cake: -- Simply
 create a new `.json` file in the `./palettes/` directory, then either
 update your config file with the new theme name, or specify `-p <NAME>`
 as a command line option (and when you're done be sure to throw a PR out
@@ -42,7 +42,7 @@ To customize the run to your liking, you can either modify the config file,
 or override individual options using the command line flags. Note, the
 command line arguments take precedence over the config file's values.
 
-```bash
+```text
 pipenv run -- ./wallfab.py -h
 usage: wallfab.py [-h] [-c FILE] [-r {standard,high,full_hd,quad_hd,two_k,four_k,eight_k}] [-p PALETTE] [-b BACKGROUND] [-a ACCENTS] [-s ACCENT_SCALING] [-t {fill,outline}] [--accent-outline ACCENT_OUTLINE]
 
