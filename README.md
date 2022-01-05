@@ -1,9 +1,12 @@
-# :sparkles: Wallfab :sparkles:
+# :sparkles: WallFab :sparkles:
 
-> Programmatically generate minimally beautiful backgrounds
-> with a color palette of your choice.
+> Wallpaper Fabricator (WallFab): Programmatically generate minimal,
+> beautiful, and clean backgrounds with a color palette of your
+> choice.
 
 ... (yet **_another_**) Highly configurable, programmatic wallpaper generator.
+
+* TODO: img
 
 ## :electric_plug: Requirements
 
@@ -44,16 +47,16 @@ command line arguments take precedence over the config file's values.
 
 ```text
 pipenv run -- ./wallfab.py -h
-usage: wallfab.py [-h] [-c FILE] [-r {standard,high,full_hd,quad_hd,two_k,four_k,eight_k}] [-p PALETTE] [-b BACKGROUND] [-a ACCENTS] [-s ACCENT_SCALING] [-t {fill,outline}] [--accent-outline ACCENT_OUTLINE]
+usage: wallfab.py [-h] [-c FILE] [-r {standard,high,full_HD,quad_HD,two_K,four_K,eight_K}] [-p PALETTE] [-b BACKGROUND] [-a ACCENTS] [-s ACCENT_SCALING] [-t {fill,outline}] [--accent-outline ACCENT_OUTLINE] [--accent-shapes]
 
 options:
   -h, --help            show this help message and exit
   -c FILE, --config_file FILE
                         Specify path to config file
-  -r {standard,high,full_hd,quad_hd,two_k,four_k,eight_k}, --resolution {standard,high,full_hd,quad_hd,two_k,four_k,eight_k}
+  -r {standard,high,full_HD,quad_HD,two_K,four_K,eight_K}, --resolution {standard,high,full_HD,quad_HD,two_K,four_K,eight_K}
                         Specify resolution of generated wallpaper.
   -p PALETTE, --palette PALETTE
-                        Name of color palette to use. I.e, name of JSON file in palettes dir (WITHOUT the .json).
+                        Name of color palette to use. I.e, name of JSON file in palettes/ dir.
   -b BACKGROUND, --background BACKGROUND
                         Name of color from palette to use as the background color.
   -a ACCENTS, --accents ACCENTS
@@ -66,4 +69,23 @@ options:
                         Type of accent to be rendered; default is filled
   --accent-outline ACCENT_OUTLINE
                         Width/thickness of accent outline; ONLY relevant if accent_type is set to 'outline' -- unused when set to 'fill'
+  --accent-shapes       Types of accent shapes to use; can either be 'all', or a CSV list of different values; MUST be one of: all | circle | square | triangle | diamond | cross | circle,square | circle,triangle | circle,diamond | circle,cross
+                        | square,triangle | square,diamond | square,cross | triangle,diamond | triangle,cross | diamond,cross | circle,square,triangle | circle,square,diamond | circle,square,cross | circle,triangle,diamond |
+                        circle,triangle,cross | circle,diamond,cross | square,triangle,diamond | square,triangle,cross | square,diamond,cross | triangle,diamond,cross | circle,square,triangle,diamond | circle,square,triangle,cross |
+                        circle,square,diamond,cross | circle,triangle,diamond,cross | square,triangle,diamond,cross
 ```
+
+## :gear: More info on options
+
+Supported shapes that can be combined (except `all`) for various accents via the `--accent-shapes` option:
+
+* `all`
+* `circle`
+* `square`
+* `diamond`
+* `triangle`
+* `cross`
+
+For example, using only circles and cross' (... `--accent-shapes circle,cross` ...):
+
+* TODO: img
