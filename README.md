@@ -5,12 +5,12 @@
 
 ... (yet **_another_**) Highly configurable, programmatic wallpaper generator.
 
-## Requirements
+## :electric_plug: Requirements
 
 * [Python 3.10.x](https://www.python.org/downloads/)
 * [pipenv](https://pipenv.pypa.io/en/latest/)
 
-## Palettes/Themes
+## :art: Palettes/Themes
 
 Wallfab ships with an extensive default set of [palettes](./palettes), including:
 
@@ -28,7 +28,7 @@ update your config file with the new theme name, or specify `-p <NAME>`
 as a command line option (and when you're done be sure to throw a PR out
 so the community can leverage it too!)
 
-## Running
+## :running: Running
 
 The default [config.toml](./config.toml) is set to a sane prefault, so
 simply running the script with no `-h` should give a good example of what
@@ -53,7 +53,7 @@ options:
   -r {standard,high,full_hd,quad_hd,two_k,four_k,eight_k}, --resolution {standard,high,full_hd,quad_hd,two_k,four_k,eight_k}
                         Specify resolution of generated wallpaper.
   -p PALETTE, --palette PALETTE
-                        Name of color palette to use. I.e, name of JSON file in palettes/ dir.
+                        Name of color palette to use. I.e, name of JSON file in palettes dir (WITHOUT the .json).
   -b BACKGROUND, --background BACKGROUND
                         Name of color from palette to use as the background color.
   -a ACCENTS, --accents ACCENTS
